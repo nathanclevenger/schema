@@ -14,3 +14,17 @@ const User = Schema({
   url: URL,
 })
 ```
+
+
+```javascript
+import { Schema } from 'schema.js'
+
+const User = Schema({
+  name: String,
+  email: String,
+  tags: [String],
+  createdAt: Date,
+  url: URL,
+  displayAs: `${name} <${email}>`,
+})
+```
