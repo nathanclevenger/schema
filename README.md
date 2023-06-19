@@ -28,3 +28,16 @@ const User = Schema({
   displayAs: () => `${name} <${email}>`,
 })
 ```
+
+
+
+```javascript
+const User = {
+  name: String,
+  email: String,
+  tags: [String],
+  createdAt: Date,
+  url: URL,
+  displayAs: () => `${name} <${email}>`,
+}
+```
