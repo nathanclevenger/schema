@@ -25,6 +25,6 @@ const User = Schema({
   tags: [String],
   createdAt: Date,
   url: URL,
-  displayAs: `${name} <${email}>`,
+  displayAs: () => `${name} <${email}>`,
 })
 ```
